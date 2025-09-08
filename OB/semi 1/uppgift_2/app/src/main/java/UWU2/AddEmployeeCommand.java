@@ -15,8 +15,12 @@ public class AddEmployeeCommand implements Command{
 
     @Override
     public void execute(Database db, PaymentSystem ps) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'execute'");
+        boolean added = db.addEmployee(employeeId, name, accountNumber);
+        if (added) {
+            db.setSalary(employeeId, salary);
+        }else {
+            System.out.println("Fel: Kunde inte lägga till anställd " + employeeId);
+        }
     }
 
 }
