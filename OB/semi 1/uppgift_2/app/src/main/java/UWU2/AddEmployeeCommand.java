@@ -1,0 +1,22 @@
+package UWU2;
+
+public class AddEmployeeCommand implements Command{
+    private int employeeId;
+    private String name;
+    private double salary;
+    private String accountNumber;
+
+    public AddEmployeeCommand(int employeeId, String name, double salary, String accountNumber){
+        this.employeeId = employeeId;
+        this.name = name;
+        this.salary = salary;
+        this.accountNumber = accountNumber;
+    }
+
+    @Override
+    public void execute(Database db, PaymentSystem ps) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'execute'");
+    }
+
+}
