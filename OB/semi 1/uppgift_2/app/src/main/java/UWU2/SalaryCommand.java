@@ -12,7 +12,6 @@ public class SalaryCommand implements Command {
     @Override
     public void execute(Database db, PaymentSystem ps) {
         boolean ok = db.setSalary(employeeId,newSalary);
-
         if (!ok) {
             System.out.println("Fel: Kunde inte uppdatera lön för anställd " + employeeId);
         } 
