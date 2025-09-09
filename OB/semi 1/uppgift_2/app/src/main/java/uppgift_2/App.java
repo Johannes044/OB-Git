@@ -3,7 +3,7 @@
  */
 package uppgift_2;
 
-import UWU2.CommandRunner;
+import uppgift_3.Main1;
 
 public class App {
     public String getGreeting() {
@@ -11,6 +11,6 @@ public class App {
     }
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
-        CommandRunner.run(null, null);
+        //Main1.main(args);
     }
 }

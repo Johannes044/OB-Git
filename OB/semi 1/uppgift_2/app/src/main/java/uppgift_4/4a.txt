@@ -1,0 +1,8 @@
+Vilka principer bryts?
+
+DRY (Don’t Repeat Yourself) – Samma logik (hantering av vänster/höger uttryck och toString-format) dupliceras i Add och Mul.
+
+Open/Closed Principle (OCP) – Om vi vill lägga till fler operatorer (t.ex. Subtraktion eller Division) måste vi duplicera samma struktur igen.
+
+Single Responsibility Principle (SRP) – Klassen tar ansvar både för struktur (trädet) och för presentation (hur uttrycket ser ut som sträng).
+
