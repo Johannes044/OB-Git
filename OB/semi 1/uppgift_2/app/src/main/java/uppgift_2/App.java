@@ -3,12 +3,14 @@
  */
 package uppgift_2;
 
+import UWU2.CommandRunner;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
     }
-
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+        CommandRunner.run(null, null);
     }
 }

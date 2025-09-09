@@ -1,0 +1,9 @@
+
+Förklara varför vi vill använda Command Pattern i detta fall, använd relevanta begrepp från kursen.
+
+vi använder Command pattern för att ha hög cohesion (en klass gör en sak och gör den väl) och ha så låg coupling 
+(en klass här inte beroende av andra klasser) som möligt eftersom att vi vill ha så flexiblet system som möligt.
+
+Command pattern i detta fallet skapar Dependency Inversion (DIP) som innebär att alla klasser är beroende av ett interface,
+men det ger även Single Responsibility Princicple (SRP) (ger ’high cohesion’). Vi får också Open Closed Principle (OCP) som bieffect
+av DIP och SRP som innebär att vi kan lägga till nya klasser och metoder utan att behöva ändra över allt i våra kod. 
